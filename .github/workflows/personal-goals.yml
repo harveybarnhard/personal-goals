@@ -1,4 +1,4 @@
-name: Pull and clean data
+name: Pull and Clean data
 
 on:
   push:
