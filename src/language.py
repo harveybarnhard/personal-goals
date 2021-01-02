@@ -27,3 +27,7 @@ if date_time >= max_date:
         del df['temp']
         df.loc[df.index.max() + 1] = ['German'] + [date_string] + [xp] + [date_unix]
 df.to_csv('./data/raw/language.csv', index=False)
+
+# TODO: Aggregate to weekly, starting from monday
+# TODO: resolve implicit conversion from series to integers on line 20
+# TODO: Get timestamp of latest unix timestamp of the day
