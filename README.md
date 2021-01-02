@@ -1,5 +1,5 @@
 # personal-goals
-![Last Updated](https://img.shields.io/date/1609604385?color=FC4C02&label=Last%20Updated)
+![Last Updated](https://img.shields.io/date/1609604725?color=FC4C02&label=Last%20Updated)
 
 I use this repository to keep track of my progress in these major areas:
 
