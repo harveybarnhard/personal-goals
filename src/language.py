@@ -1,8 +1,9 @@
-import duolingo
 import json
 import os
 import pandas as pd
 from datetime import datetime
+import duolingo
+help(duolingo)
 
 # Sign in and get daily xp progresss
 lingo = duolingo.Duolingo('HarveyBarn', os.getenv('DUOLINGO'))
