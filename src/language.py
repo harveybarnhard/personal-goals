@@ -14,7 +14,7 @@ xp = response['xp_today']
 date_unix = response['lessons_today'][0]['time']
 date_time = datetime.fromtimestamp(date_unix).date()
 date_string = date_time.strftime('%m-%d-%Y')
-df = pd.read_csv('https://raw.githubusercontent.com/harveybarnhard/personal-goals/main/data/language.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/harveybarnhard/personal-goals/main/data/raw/language.csv')
 
 # Add a row
 df['temp'] = datetime.fromtimestamp(df.timestamp).date()
@@ -26,4 +26,4 @@ if date_time >= max_date:
     else:
         del df['temp']
         df.loc[df.index.max() + 1] = ['German'] + [date_string] + [xp] + [date_unix]
-df.to_csv('./data/language.csv', index=False)
+df.to_csv('./data/raw/language.csv', index=False)
