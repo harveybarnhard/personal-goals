@@ -13,8 +13,8 @@ xp = response['xp_today']
 # Get date of first lesson
 date_unix = response['lessons_today'][0]['time']
 date_time = datetime.fromtimestamp(date_unix)
-date_string = date_time.strftime('%m-%d-%Y')
+date_string = date_time.strftime('%m/%d/%Y')
 
 df = pd.read_csv('https://raw.githubusercontent.com/harveybarnhard/personal-goals/main/data/language.csv')
-
+df['date'] = pd.to_datetime(df['date'])
 print(df)
