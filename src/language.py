@@ -1,10 +1,8 @@
+import duolingo
 import json
 import os
 import pandas as pd
 from datetime import datetime
-import duolingo
-from importlib import reload
-reload(duolingo)
 
 # Sign in and get daily xp progresss
 lingo = duolingo.Duolingo('HarveyBarn', os.getenv('DUOLINGO'))
@@ -18,8 +16,9 @@ date_time = datetime.fromtimestamp(date_unix).date()
 date_string = date_time.strftime('%m-%d-%Y')
 df = pd.read_csv('https://raw.githubusercontent.com/harveybarnhard/personal-goals/main/data/raw/language.csv')
 
-# Add a row]
-df['temp'] = datetime.fromtimestamp(df.timestamp).date()
+# Add a row
+df['timestamp'] = df['timestamp'].astype(int)
+df['temp'] = df['timestamp'].apply(lambda x: datetime.fromtimestamp(x).date())
 max_date = df.temp.max()
 if date_time >= max_date:
     if date_time == max_date:
@@ -40,4 +39,3 @@ df = df.groupby(['monday'], as_index=False).agg({
 })
 df.rename(columns={'xp':'duolingo_xp'}, inplace=True)
 df.to_csv('./data/language.csv', index=False)
-# TODO: resolve implicit conversion from series to integers on line 20
