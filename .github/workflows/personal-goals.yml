@@ -48,7 +48,7 @@ jobs:
         git add ./data
         git add ./README.md
         git commit -m "Auto-updating personal-goals data"
-    - name: Push encrypted tokens back to repository
+    - name: Push updated data to the main branch
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

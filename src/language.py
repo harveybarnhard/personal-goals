@@ -7,6 +7,7 @@ import duolingo
 # Sign in and get daily xp progresss
 lingo = duolingo.Duolingo('HarveyBarn', os.getenv('DUOLINGO'))
 response = lingo.get_daily_xp_progress()
+print(response)
 # Get number of xp today
 xp = response['xp_today']
 
