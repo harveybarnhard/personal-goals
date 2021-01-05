@@ -30,7 +30,7 @@ jobs:
         pip install pandas datetime duolingo-api
     - name: Set timezone to America/New_York
       run: |
-        timedatectl set-timezone America/New_York
+        sudo timedatectl set-timezone America/New_York
         timedatectl
     - name: Pull fitness data
       run: |
