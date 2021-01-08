@@ -1,6 +1,6 @@
 # personal-goals
-![Last Updated](https://img.shields.io/date/1610068462?color=FC4C02&label=Fitness%20Updated&logo=strava)
-![Last Updated](https://img.shields.io/date/1610068462?color=7ac70c&label=Language%20Updated&logo=duolingo)
+![Last Updated](https://img.shields.io/date/1610074187?color=FC4C02&label=Fitness%20Updated&logo=strava)
+![Last Updated](https://img.shields.io/date/1610074187?color=7ac70c&label=Language%20Updated&logo=duolingo)
 
 I use this repository to keep track of my progress in these major areas:
 
