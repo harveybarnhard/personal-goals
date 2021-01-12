@@ -6,5 +6,5 @@ I use this repository to keep track of my progress in these major areas:
 
 1. Fitness (Data pulled from Strava)
 2. Language learning (Data pulled from Duolingo)
-3. Books read (Data pulled from Goodreads) (in progress)
+3. Books read (Manual because GoodReads API no longer active) (in progress)
 4. Blog posts (Data pulled from [harveybarnhard.com](https://harveybarnhard.com)) (in progress)
