@@ -1,7 +1,7 @@
 # personal-goals
-![Last Updated](https://img.shields.io/date/1625019999?color=FC4C02&label=Fitness%20Updated&logo=strava)
-![Last Updated](https://img.shields.io/date/1625019999?color=7ac70c&label=Language%20Updated&logo=duolingo)
-![Last Updated](https://img.shields.io/date/1625019999?color=e9e5cd&label=Books%20Updated&logo=goodreads)
+![Last Updated](https://img.shields.io/date/1625022534?color=FC4C02&label=Fitness%20Updated&logo=strava)
+![Last Updated](https://img.shields.io/date/1625022534?color=7ac70c&label=Language%20Updated&logo=duolingo)
+![Last Updated](https://img.shields.io/date/1625022534?color=e9e5cd&label=Books%20Updated&logo=goodreads)
 
 I use this repository to keep track of my progress in these major areas:
 
